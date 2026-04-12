@@ -6,8 +6,8 @@ title: P Magadum # the website title (if blank, full name will be used instead)
 first_name: Pralhad
 middle_name:
 last_name: Magadum
-email: phd2201201007@iiti.ac.in]
-description: PhD Researcher at IIT Indore | FPGA & Network Security
+# email: phd2201201007@iiti.ac.in]
+# description: PhD Researcher at IIT Indore | FPGA & Network Security
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
