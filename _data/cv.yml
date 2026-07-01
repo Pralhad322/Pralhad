@@ -1,189 +1,76 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Pralhad Magadum
+  label: Doctoral Researcher
+  email: phd2201201007@iiti.ac.in
+  location: Indore, Madhya Pradesh, India
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Doctoral Researcher in Computer Science and Engineering at IIT Indore, working on FPGA-based hardware acceleration, high-speed networking, programmable data planes, and system security.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: Pralhad322
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
+      - institution: Indian Institute of Technology Indore
+        location: Indore, Madhya Pradesh, India
+        area: Computer Science and Engineering
         studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+        start_date: ""
+        end_date: Present
         highlights:
-          - Description 1.
-          - Description 2.
+          - Research focus: hardware-accelerated networking, FPGA-based packet processing, programmable data planes, and system security.
+          - Working on high-throughput intrusion detection systems and packet scheduling architectures for high-speed networks.
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+    Research Experience:
+      - company: Indian Institute of Technology Indore
+        position: Doctoral Researcher, Department of Computer Science and Engineering
+        location: Indore, Madhya Pradesh, India
+        start_date: ""
+        end_date: Present
         highlights:
-          - Description 1.
-          - Description 2.
+          - Design and evaluation of FPGA-oriented architectures for line-rate packet processing.
+          - Development of hardware-efficient intrusion detection system components for high-speed network traffic.
+          - Exploration of packet scheduling and queue-management mechanisms, including CT-PIFO, to improve flow completion time.
+          - Analysis of trade-offs among throughput, resource utilization, latency, and deployability in programmable network systems.
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
+    Research Interests:
+      - name: Hardware-Accelerated Networking
+        icon: fa-solid fa-network-wired
+        keywords: FPGA platforms, programmable data planes, line-rate packet processing, high-throughput network systems
+      - name: Network and System Security
+        icon: fa-solid fa-shield-halved
+        keywords: intrusion detection systems, packet inspection, secure network architectures
+      - name: Packet Scheduling
+        icon: fa-solid fa-diagram-project
+        keywords: PIFO, CT-PIFO, flow completion time, queue management, data-plane scheduling
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+    Technical Skills:
+      - name: Research Areas
+        icon: fa-solid fa-microscope
+        keywords: FPGA acceleration, computer networks, network security, programmable data planes, packet scheduling
+      - name: Systems
+        icon: fa-solid fa-microchip
+        keywords: hardware/software co-design, performance evaluation, high-speed packet processing
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: Publications and preprints will be added here
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+          - Pralhad Magadum
+        publisher: ""
+        releaseDate: ""
+        summary: Add BibTeX entries in _bibliography/papers.bib or update this CV file with accepted publications, preprints, and manuscripts under review.
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: FPGA-Based Intrusion Detection Systems
+        summary: Hardware-efficient IDS research for high-throughput packet inspection and real-time network security.
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - Focus on throughput, resource utilization, and deployability on FPGA platforms.
+      - name: CT-PIFO Packet Scheduling
+        summary: Congruity Tree-based PIFO scheduling architecture for improving flow completion time in high-speed networks.
+        highlights:
+          - Explores practical data-plane scheduling designs for programmable network devices.
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    Languages:
+      - name: English
+        summary: Professional working proficiency
