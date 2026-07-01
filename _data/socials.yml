@@ -1,6 +1,6 @@
 # Social links displayed across the site.
 # Add IDs/usernames as you create or confirm them.
-cv_pdf: /assets/pdf/cv.pdf
+cv_pdf:
 email: phd2201201007@iiti.ac.in
 rss_icon: true
 scholar_userid:
