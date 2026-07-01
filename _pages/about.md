@@ -2,33 +2,34 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Doctoral Researcher, Department of Computer Science and Engineering, IIT Indore
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Department of Computer Science and Engineering</p>
+    <p>Indian Institute of Technology Indore</p>
+    <p>Indore, Madhya Pradesh, India</p>
 
-# selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: true
 
 # announcements:
-#   enabled: true # includes a list of news items
-#   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-#   limit: 5 # leave blank to include all the news in the `_news` folder
+#   enabled: true
+#   scrollable: true
+#   limit: 5
 
 # latest_posts:
 #   enabled: true
-#   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-#   limit: 3 # leave blank to include all the blog posts
+#   scrollable: true
+#   limit: 3
 ---
 
-I am a Doctoral Researcher in the Department of Computer Science and Engineering at the Indian Institute of Technology (IIT) Indore, working under the intersection of hardware-accelerated networking and system security. 
+I am a Doctoral Researcher in the Department of Computer Science and Engineering at the Indian Institute of Technology (IIT) Indore. My research sits at the intersection of hardware-accelerated networking, programmable data planes, and system security.
 
-My primary research focuses on the architectural design of high-throughput, programmable data planes, specifically leveraging FPGA platforms to achieve line-rate performance. Currently, my work involves developing hardware-efficient Intrusion Detection Systems (IDS) and engineering novel packet scheduling frameworks, such as CT-PIFO (Congruity Tree-based PIFO), to optimize Flow Completion Times in high-speed networks. 
+My current work focuses on designing high-throughput and hardware-efficient network systems on FPGA platforms. I am particularly interested in line-rate packet processing, intrusion detection systems (IDS), and packet scheduling mechanisms for high-speed networks.
 
+A central part of my research explores scheduling and queue-management architectures such as CT-PIFO (Congruity Tree-based PIFO), with the goal of improving flow completion time while keeping the hardware design practical for programmable network devices.
 
+I use this website to share my research interests, projects, publications, and academic updates.
