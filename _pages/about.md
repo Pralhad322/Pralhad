@@ -34,4 +34,4 @@ A central part of my research explores scheduling and queue-management architect
 
 I use this website to share my research interests, projects, publications, and academic updates.
 
-For contact, email me at phd2201201007@iiti.ac.in.
+For contact, email me at phd2201201007[at]iiti[dot]ac[dot]in.
