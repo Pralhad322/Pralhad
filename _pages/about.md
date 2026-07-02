@@ -13,7 +13,7 @@ profile:
     <p>Indian Institute of Technology Indore</p>
     <p>Indore, Madhya Pradesh, India</p>
 
-social: true
+social: false
 
 # announcements:
 #   enabled: true
@@ -33,3 +33,5 @@ My current work focuses on designing high-throughput and hardware-efficient netw
 A central part of my research explores scheduling and queue-management architectures such as CT-PIFO (Congruity Tree-based PIFO), with the goal of improving flow completion time while keeping the hardware design practical for programmable network devices.
 
 I use this website to share my research interests, projects, publications, and academic updates.
+
+For contact, email me at phd2201201007@iiti.ac.in.
