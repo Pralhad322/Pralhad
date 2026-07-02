@@ -4,16 +4,16 @@ title: about
 permalink: /
 subtitle: Doctoral Researcher, Department of Computer Science and Engineering, IIT Indore
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false
-  more_info: >
-    <p>Department of Computer Science and Engineering</p>
-    <p>Indian Institute of Technology Indore</p>
-    <p>Indore, Madhya Pradesh, India</p>
+# profile:
+#   align: right
+#   image: prof_pic.jpg
+#   image_circular: false
+#   more_info: >
+#     <p>Department of Computer Science and Engineering</p>
+#     <p>Indian Institute of Technology Indore</p>
+#     <p>Indore, Madhya Pradesh, India</p>
 
-social: false
+# social: false
 
 # announcements:
 #   enabled: true
