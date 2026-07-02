@@ -1,7 +1,3 @@
-# -----------------------------------------------------------------------------
-# Site settings
-# -----------------------------------------------------------------------------
-
 title: P Magadum
 first_name: Pralhad
 middle_name:
@@ -15,17 +11,12 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: academic website, research scholar, FPGA, network security, packet scheduling, IIT Indore
 lang: en
-icon: ⚛️
-
+icon:
 url: https://pralhad322.github.io
 baseurl: /Pralhad
 last_updated: false
 impressum_path:
 back_to_top: true
-
-# -----------------------------------------------------------------------------
-# Theme
-# -----------------------------------------------------------------------------
 
 repo_theme_light: default
 repo_theme_dark: dark
@@ -33,18 +24,9 @@ repo_trophies:
   enabled: true
   theme_light: flat
   theme_dark: gitdimmed
-
 external_services:
   github_readme_stats_url: https://github-readme-stats.vercel.app
   github_profile_trophy_url: https://github-profile-trophy.vercel.app
-
-# -----------------------------------------------------------------------------
-# RSS Feed
-# -----------------------------------------------------------------------------
-
-# -----------------------------------------------------------------------------
-# Layout
-# -----------------------------------------------------------------------------
 
 navbar_fixed: true
 footer_fixed: true
@@ -52,20 +34,10 @@ search_enabled: true
 socials_in_search: true
 posts_in_search: false
 bib_search: false
-
 max_width: 930px
-
-# -----------------------------------------------------------------------------
-# Open Graph & Schema.org
-# -----------------------------------------------------------------------------
-
 serve_og_meta: false
 serve_schema_org: false
 og_image:
-
-# -----------------------------------------------------------------------------
-# Analytics and search engine verification
-# -----------------------------------------------------------------------------
 
 google_analytics:
 cronitor_analytics:
@@ -74,18 +46,12 @@ openpanel_analytics:
 google_site_verification:
 bing_site_verification:
 
-# -----------------------------------------------------------------------------
-# Blog
-# -----------------------------------------------------------------------------
-
 blog_name: Research Notes
 blog_description: Notes on FPGA-based networking, packet scheduling, and system security
 permalink: /blog/:year/:title/
 lsi: false
-
 pagination:
   enabled: true
-
 related_blog_posts:
   enabled: false
   max_related: 5
@@ -103,10 +69,11 @@ giscus:
   light_theme: light
   emit_metadata: 0
   lang: en
-
-# -----------------------------------------------------------------------------
-# Collections
-# -----------------------------------------------------------------------------
+disqus_shortname:
+external_sources: []
+newsletter:
+  enabled: false
+  endpoint:
 
 collections:
   books:
@@ -117,68 +84,50 @@ collections:
     output: true
   projects:
     output: true
-  teaching:
+  teachings:
     output: true
-  people:
-    output: true
-
-announcements:
-  enabled: false
-  scrollable: true
-  limit: 5
-
-latest_posts:
-  enabled: false
-  scrollable: true
-  limit: 3
-
-selected_papers: false
-socials:
-  email: phd2201201007@iiti.ac.in
-
-# -----------------------------------------------------------------------------
-# Jekyll settings
-# -----------------------------------------------------------------------------
 
 markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter_opts:
-    css_class: highlight
+    css_class: "highlight"
     span:
       line_numbers: false
     block:
       line_numbers: false
       start_line: 1
-
-include: ["_pages"]
+include: ["_pages", "_scripts"]
 exclude:
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
-  - docker-compose.yml
   - Dockerfile
-  - docs/
+  - docker-compose.yml
+  - docker-compose-slim.yml
   - FAQ.md
   - Gemfile
   - Gemfile.lock
   - INSTALL.md
   - LICENSE
+  - lighthouse_results/
   - package.json
   - package-lock.json
+  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
-  - vendor
   - _posts/
   - assets/jupyter/
-
+  - readme_preview/
+  - vendor
 keep_files:
   - CNAME
   - .nojekyll
-
 plugins:
-  - jekyll-archives
+  - jekyll-3rd-party-libraries
+  - jekyll-archives-v2
+  - jekyll-cache-bust
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
@@ -190,58 +139,40 @@ plugins:
   - jekyll-regex-replace
   - jekyll/scholar
   - jekyll-sitemap
+  - jekyll-socials
   - jekyll-tabs
   - jekyll-terser
+  - jekyll-toc
+  - jekyll-twitter-plugin
   - jemoji
 
-# -----------------------------------------------------------------------------
-# Library versions
-# -----------------------------------------------------------------------------
-
-academicons:
-  version: 1.9.4
-bootstrap:
-  version: 4.6.2
-fontawesome:
-  version: 6.7.2
-jquery:
-  version: 3.6.0
-mathjax:
-  version: 3.2.2
-masonry:
-  version: 4.2.2
-mdb:
-  version: 4.20.0
-medium_zoom:
-  version: 1.1.0
-
-# -----------------------------------------------------------------------------
-# Optional features
-# -----------------------------------------------------------------------------
-
-enable_google_analytics: false
-enable_cronitor_analytics: false
-enable_pirsch_analytics: false
-enable_openpanel_analytics: false
-enable_google_verification: false
-enable_bing_verification: false
-enable_masonry: true
-enable_math: true
-enable_tooltips: false
-enable_darkmode: true
-enable_navbar_social: false
-enable_project_categories: true
-enable_medium_zoom: true
-enable_progressbar: true
-enable_video_embedding: false
-external_sources: []
-
-# -----------------------------------------------------------------------------
-# Jekyll Scholar
-# -----------------------------------------------------------------------------
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
+sass:
+  style: compressed
+jekyll-minifier:
+  compress_javascript: false
+  exclude: ["robots.txt", "assets/js/search/*.js"]
+terser:
+  compress:
+    drop_console: true
+jekyll-archives:
+  posts:
+    enabled: [year, tags, categories]
+    permalinks:
+      year: "/blog/:year/"
+      tags: "/blog/:type/:name/"
+      categories: "/blog/:type/:name/"
+  books:
+    enabled: [year, tags, categories]
+display_tags: []
+display_categories: []
 
 scholar:
-  last_name: Magadum
+  last_name: [Magadum]
   first_name: [Pralhad]
   style: apa
   locale: en
@@ -252,38 +183,105 @@ scholar:
   replace_strings: true
   join_strings: true
   details_dir: bibliography
-  details_layout: bibtex.html
   details_link: Details
   query: "@*"
   group_by: year
   group_order: descending
 
-# -----------------------------------------------------------------------------
-# ImageMagick
-# -----------------------------------------------------------------------------
-
+enable_publication_badges:
+  altmetric: false
+  dimensions: false
+  google_scholar: false
+  inspirehep: false
+filtered_bibtex_keywords: [abbr, abstract, additional_info, altmetric, annotation, arxiv, award, award_name, bibtex_show, blog, code, dimensions, eprint, google_scholar_id, hal, html, inspirehep_id, pdf, pmid, poster, preview, selected, slides, supp, video, website]
+max_author_limit: 3
+more_authors_animation_delay: 10
+enable_publication_thumbnails: true
+external_links:
+  enabled: true
+  rel: external nofollow noopener
+  target: _blank
+  exclude:
 imagemagick:
   enabled: false
-  widths:
-    - 480
-    - 800
-    - 1400
-  input_directories:
-    - assets/img/
-  input_formats:
-    - ".jpg"
-    - ".jpeg"
-    - ".png"
-    - ".tiff"
-    - ".gif"
+  widths: [480, 800, 1400]
+  input_directories: [assets/img/]
+  input_formats: [".jpg", ".jpeg", ".png", ".tiff", ".gif"]
   output_formats:
-    webp: "-quality 85"
+    webp: "-auto-orient -quality 85"
+lazy_loading_images: true
 
-# -----------------------------------------------------------------------------
-# Minifier
-# -----------------------------------------------------------------------------
+enable_google_analytics: false
+enable_cronitor_analytics: false
+enable_pirsch_analytics: false
+enable_openpanel_analytics: false
+enable_google_verification: false
+enable_bing_verification: false
+enable_cookie_consent: false
+enable_masonry: true
+enable_math: true
+enable_tooltips: false
+enable_darkmode: true
+enable_navbar_social: false
+enable_project_categories: true
+enable_medium_zoom: true
+enable_progressbar: true
+enable_video_embedding: false
 
-jekyll-minifier:
-  exclude: ["robots.txt", "assets/js/search-data.js"]
-  uglifier_args:
-    harmony: true
+third_party_libraries:
+  download: false
+  jquery:
+    integrity:
+      js: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+  mdb:
+    integrity:
+      css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
+      js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css"
+      js: "https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js"
+  google_fonts:
+    url:
+      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+  masonry:
+    integrity:
+      js: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+  imagesloaded:
+    integrity:
+      js: "sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"
+  medium_zoom:
+    integrity:
+      js: "sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"
+  mathjax:
+    integrity:
+      js: "sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"
+  polyfill:
+    url:
+      js: "https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"
+
+jekyll_get_json:
+  - data: resume
+    json: assets/json/resume.json
+jsonresume:
+  - basics
+  - work
+  - education
+  - publications
+  - projects
+  - volunteer
+  - awards
+  - certificates
+  - skills
+  - languages
+  - interests
+  - references
