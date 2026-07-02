@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://pralhad.github.io/Pralhad/sitemap.xml
+Sitemap: https://pralhad322.github.io/Pralhad/sitemap.xml
