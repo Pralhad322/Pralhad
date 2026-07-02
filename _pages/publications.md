@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-Selected peer-reviewed publications from my ORCID record.
+Selected peer-reviewed publications from my ORCID record: 0009-0003-8208-7786.
 
 <div class="publications">
 
