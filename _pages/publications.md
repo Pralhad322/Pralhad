@@ -7,9 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-Publications, preprints, and manuscripts will be added here as they become available.
-
-<!-- Add BibTeX entries to _bibliography/papers.bib to render them automatically on this page. -->
+Selected publications from my ORCID record.
 
 <div class="publications">
 
