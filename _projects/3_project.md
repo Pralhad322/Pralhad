@@ -2,7 +2,7 @@
 layout: page
 title: Programmable Data Plane Architectures
 description: FPGA-oriented packet-processing pipelines for line-rate networking.
-img: assets/img/7.jpg
+# img: assets/img/7.jpg
 importance: 3
 category: research
 ---

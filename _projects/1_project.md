@@ -2,7 +2,7 @@
 layout: page
 title: FPGA-Based Intrusion Detection Systems
 description: Hardware-efficient network security for high-throughput packet processing.
-img: assets/img/12.jpg
+# img: assets/img/12.jpg
 importance: 1
 category: research
 related_publications: false

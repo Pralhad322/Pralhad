@@ -2,7 +2,7 @@
 layout: page
 title: CT-PIFO Packet Scheduling
 description: Congruity Tree-based PIFO scheduling for high-speed networks.
-img: assets/img/3.jpg
+# img: assets/img/3.jpg
 importance: 2
 category: research
 giscus_comments: false
