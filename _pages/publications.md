@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-Selected publications from my ORCID record.
+Selected peer-reviewed publications from my ORCID record.
 
 <div class="publications">
 
